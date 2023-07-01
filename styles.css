@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: medium solid red; */
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('Norse-Bold.otf');
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left-page {
+    width: 500px;
+    min-width: 300px;
+    background-image: url(leaves-background.jpg);
+    background-size: 100% 100%;
+}
+
+.logo {
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    top: 100px;
+}
+
+.logo-text {
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: "Norse";
+}
+
+.right-page {
+    flex-grow: 1;
+    padding: 10vh 50px;
+}
+
+.header-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.form-content {
+    width: 700px;
+}
+
+form {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row {
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.field {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+label {
+    font-size: 15px;
+}
+input {
+    border: 1px solid #E5E7EB;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+input:focus {
+    border: #596d48;
+}
+input:focus::placeholder {
+    color: transparent;
+}
+
+button {
+    background: #596d48;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin: 30px 0 40px;
+}
+
+.login {
+    color: #596d48;
+    font-weight: bold;
+    text-decoration: none;
+}

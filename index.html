@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="left-page">
+        <div class="logo">
+            <img src="odin-logo.png" alt="X" width="100" height="100">
+            <p class = "logo-text">ODIN</p>
+        </div>
+    </div>
+    <div class="right-page">
+        <div class="background-panel">
+            <div class="form-content">
+                <p class="header-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to.<br><br><br>Let's do this!</p>
+                <form action="random" id="signin-form">
+                    <div class="row">
+                        <div class="field">
+                            <label for="first-name">FIRST NAME</label>
+                            <input required id="first-name" name="first-name" type="text">
+                        </div>
+                        <div class="field">
+                            <label for="last-name">LAST NAME</label>
+                            <input required id="last-name" name="last-name" type="text">  
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="field">
+                            <label for="email">EMAIL</label>
+                            <input required id="email" name="email" type="email">
+                        </div>
+                        <div class="field">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input required id="phone-number" name="phone-number" type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="field">
+                            <label for="password">PASSWORD</label>
+                            <input required id="password" name="password" type="password">
+                        </div>
+                        <div class="field">
+                            <label for="password">CONFIRM PASSWORD</label>
+                            <input required id="confirm-password" name="confirm-password" type="password">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button type="submit" form="signin-form">Create Account</button>
+        <p>Already have an account? <a href="https://github.com/beastgwert/Sign-up-Form" class="login">Log in</span></p>
+    </div>
+</body>
+</html>
